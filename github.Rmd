@@ -10,26 +10,58 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## prerequisites
-- have a github account
+- have a github account (and remember your password! this will be needed in a future step)
 - windows users - have powershell or some application to access the terminal
 - have an up to date version of Rstudio installed
 
 ## Acknowledgements
-https://happygitwithr.com/
+Jenny Bryan's https://happygitwithr.com/
 
 ## Objectives
+- Setup Github for Rstudio and create a SSH connections
+- be able to pull commit push to GitHub
 
 ## GitHub
 1. Go to http://github.com and make an account
 
-### setting up ssh keys
+### Contributing to an existing repo
+2. Go to https://github.com/martonelab
+3. Go to the Read-Me repository
+4. Click Fork (makes a copy to your GitHub Account)
 
+### setting up ssh keys
+- this will allow your computer to establish a secure connection between your computer and Github so that you won't need to login each time
+
+#### in the terminal
 
 ## Using the Martone Lab repositories
 
 ### Setting up Rstudio integration
 1. Go to https://github.com/martonelab
 2. Go to the Read-Me repository
-3. Click the green button to clone with HTTPS
+3. Click Fork (makes a copy to your GitHub Account)
+- allows people to attribute credit 
+- tracks changes
+- your changes will not be integrated until you say so
+- it's like making alternative universes and timelines (less of a concern for less complicated projects)
+4. Clone your repository
+_Pro tip_ 
+- make a directory (ie. tmp) where it is easy to add all your github repos to 
+- you should be removing the repo when you are done with it as good practice
+- pull the repo down to your computer when you need it
 
-### Push Pull Commit
+### Pull Commit Push
+1. `pull` - make it a habit to pull everytime before you start working on anything
+2. `commit`- the staging area, also make sure you have an informative commit message
+3. `push` - you
+
+## Terminology cheat sheet
+- `repo` / `repository` - a "folder"
+- `Fork` - copy over a repo
+- `pull request` / `pr` - when you submit some changes to be reviewed and integrate into the files
+- `push`
+- `pull`
+- `commit`
+- `branches` - an alternate timeline for the original dile 
+- `issue` - you can use this as a chat board/ forum for discussing problems associated with this repo
+- `merge conflict`
