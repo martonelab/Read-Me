@@ -1,0 +1,35 @@
+---
+title: "repository"
+author: "Jasmine"
+date: '2019-04-29'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+# R related folders
+- all will have `workshop folder` from previous R workshops in the lab
+- `sharing` useful code from other lab members
+
+## R-Stats
+- statistic files
+
+## DataOrganization
+
+## Visualization
+
+## WorkshopTemplate
+- fork this over to use as a guide for workshops!
+- remember to push your completed file to one of the 3 folders above
+
+# Data submission
+## Herbarium
+
+## BoldWorkflow
+Code to transfer PTM spreadsheets to a format for 
+
+# Other Repositories
+- 
+## New Repositories
+- A new one should be made for each new "project" in the lab (ie. new paper)

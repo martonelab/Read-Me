@@ -1,0 +1,35 @@
+---
+title: "Setting Up GitHub"
+author: "Jasmine"
+date: '2019-04-29'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## prerequisites
+- have a github account
+- windows users - have powershell or some application to access the terminal
+- have an up to date version of Rstudio installed
+
+## Acknowledgements
+https://happygitwithr.com/
+
+## Objectives
+
+## GitHub
+1. Go to http://github.com and make an account
+
+### setting up ssh keys
+
+
+## Using the Martone Lab repositories
+
+### Setting up Rstudio integration
+1. Go to https://github.com/martonelab
+2. Go to the Read-Me repository
+3. Click the green button to clone with HTTPS
+
+### Push Pull Commit
