@@ -32,6 +32,9 @@ check in the terminal for the version
 
 follow additional instructions on https://happygitwithr.com/install-git.html depending on your operating system
 
+## Skipping over the command line part
+- but if you are interested: https://happygitwithr.com/push-pull-github.html#push-pull-github
+
 ## Pull Commit Push Terminology
 1. `pull` - make it a habit to pull everytime before you start working on anything
 2. `commit`- the staging area, also make sure you have an informative commit message
@@ -39,25 +42,54 @@ follow additional instructions on https://happygitwithr.com/install-git.html dep
 
 #### Terminology cheat sheet
 - `repo` / `repository` - a "folder"
-- `Fork` - copy over a repo
+- `fork` - copy over a repo
 - `pull request` / `pr` - when you submit some changes to be reviewed and integrate into the files
-- `push`
-- `pull`
-- `commit`
+- `clone` - think of it as copying that entire folder
 - `branches` - an alternate timeline for the original dile 
 - `issue` - you can use this as a chat board/ forum for discussing problems associated with this repo
 - `merge conflict`
 
 ### Make your own repo
+you will need to do this everytime you want to create something new
+
+1. go to your account
+2. go to the `repositories` tab
+3. click the green `new` button
+4. fill in the (a) repository name, (b) description, (c) choose public or privatate, (d) check initialize with README
+5. `Create Repository`
+
+### Just downloading the file
+1. Go to the repository
+2. Click the green `Clone or download` button
+3. Choose the `Download ZIP` option to download the zipfile on to your computer
+
+### Clone your repo using Rstudio
+#### Create the project
+1. go to File > New project > Version Control > Git
+2. in repository URL paste in the provided URL from the box that pops up fromt he green `clone or download` button
+
+__Pro tip__
+- make a directory (ie. tmp) where it is easy to add all your github repos to 
+- you should be removing the repo when you are done with it as good practice
+- pull the repo down to your computer when you need it
+
+#### Changes, Save, Commit
+1. change the `README.md` file
+2. save the file
+3. go to the `Git` tab on the upper right box
+4. check the box under `staged` associated with github.rmd
+5. click the `commit` button to open a popup window
+6. type an informative description in the `commit message` text box (this is used to track what you have changed)
+7. press the `commit` button associated with the box
+8. press the green arrow (push) button * you may be promted for a username and password here
+9. check your repo to see the changes reflected
 
 ## Using the Martone Lab repositories
-#### Just downloading the file
-1. Go to https://github.com/martonelab
-2. Go to the Read-Me repository
-3. Click the green button to download the zipfile on to your computer
+- how to deal with other people's files
 
-## (12) Setting up Rstudio integration
 #### Fork over a repo
+- for cases when you want to use other people's code or collaborate
+
 1. Go to https://github.com/martonelab
 2. Go to the Read-Me repository
 3. Click Fork (makes a copy to your GitHub Account)
@@ -66,10 +98,7 @@ follow additional instructions on https://happygitwithr.com/install-git.html dep
 - your changes will not be integrated until you say so
 - it's like making alternative universes and timelines (less of a concern for less complicated projects)
 4. Clone your repository
-_Pro tip_ 
-- make a directory (ie. tmp) where it is easy to add all your github repos to 
-- you should be removing the repo when you are done with it as good practice
-- pull the repo down to your computer when you need it
+__This part is the same as cloning your own__
 
 #### Add changes easily
 
