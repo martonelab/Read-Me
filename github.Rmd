@@ -84,6 +84,8 @@ __Pro tip__
 8. press the green arrow (push) button * you may be promted for a username and password here
 9. check your repo to see the changes reflected
 
+__Pro tip __ Try following chapter 10 to cache your credentials to avoid logging in each time you push or pull to github - https://happygitwithr.com/credential-caching.html#credential-caching
+
 ## Using the Martone Lab repositories
 - how to deal with other people's files
 
@@ -100,8 +102,12 @@ __Pro tip__
 4. Clone your repository
 __This part is the same as cloning your own__
 
-#### Add changes easily
-
-__Pro tip __ Try following chapter 10 to cache your credentials to avoid logging in each time you push or pull to github - https://happygitwithr.com/credential-caching.html#credential-caching
+#### Adding your changes
+1. go to your repo that you forked to your account
+2. click new pull request
+3. click create pull request
+4. write something informative in the title and comments
+5. click create pull request
+6. now you need to wait for the owner of the repo to merge (approve of) your changes
 
 Congrats! Now you can push new lesson repos into the Lab github and pull lessons people have made available!
