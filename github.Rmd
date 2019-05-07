@@ -5,38 +5,93 @@ date: '2019-04-29'
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
-## prerequisites
-- have a github account (and remember your password! this will be needed in a future step)
+## Prerequisites
+- have a github account http://github.com
 - windows users - have powershell or some application to access the terminal
-- have an up to date version of Rstudio installed
+- have an up to date version of Rstudio installed for insturctions, see - https://happygitwithr.com/install-r-rstudio.html
 
 ## Acknowledgements
-Jenny Bryan's https://happygitwithr.com/
+https://happygitwithr.com/
 
 ## Objectives
+- Get a github account
+- Install git on the computer
 - Setup Github for Rstudio and create a SSH connections
 - be able to pull commit push to GitHub
 
-## GitHub
-1. Go to http://github.com and make an account
+## (6) Install Git
+In Shell find out where Git is (if at all) installed
+```{bash}
+which git
+```
 
-### Contributing to an existing repo
-2. Go to https://github.com/martonelab
-3. Go to the Read-Me repository
-4. Click Fork (makes a copy to your GitHub Account)
+check in the terminal for the version
+```{bash}
+#git --version
+```
 
-### setting up ssh keys
-- this will allow your computer to establish a secure connection between your computer and Github so that you won't need to login each time
+follow additional instructions on https://happygitwithr.com/install-git.html depending on your operating system
 
-#### in the terminal
+## Skipping over the command line part
+- but if you are interested: https://happygitwithr.com/push-pull-github.html#push-pull-github
+
+## Pull Commit Push Terminology
+1. `pull` - make it a habit to pull everytime before you start working on anything
+2. `commit`- the staging area, also make sure you have an informative commit message
+3. `push` - you
+
+#### Terminology cheat sheet
+- `repo` / `repository` - a "folder"
+- `fork` - copy over a repo
+- `pull request` / `pr` - when you submit some changes to be reviewed and integrate into the files
+- `clone` - think of it as copying that entire folder
+- `branches` - an alternate timeline for the original dile 
+- `issue` - you can use this as a chat board/ forum for discussing problems associated with this repo
+- `merge conflict`
+
+### Make your own repo
+you will need to do this everytime you want to create something new
+
+1. go to your account
+2. go to the `repositories` tab
+3. click the green `new` button
+4. fill in the (a) repository name, (b) description, (c) choose public or privatate, (d) check initialize with README
+5. `Create Repository`
+
+### Just downloading the file
+1. Go to the repository
+2. Click the green `Clone or download` button
+3. Choose the `Download ZIP` option to download the zipfile on to your computer
+
+### Clone your repo using Rstudio
+#### Create the project
+1. go to File > New project > Version Control > Git
+2. in repository URL paste in the provided URL from the box that pops up fromt he green `clone or download` button
+
+__Pro tip__
+- make a directory (ie. tmp) where it is easy to add all your github repos to 
+- you should be removing the repo when you are done with it as good practice
+- pull the repo down to your computer when you need it
+
+#### Changes, Save, Commit
+1. change the `README.md` file
+2. save the file
+3. go to the `Git` tab on the upper right box
+4. check the box under `staged` associated with github.rmd
+5. click the `commit` button to open a popup window
+6. type an informative description in the `commit message` text box (this is used to track what you have changed)
+7. press the `commit` button associated with the box
+8. press the green arrow (push) button * you may be promted for a username and password here
+9. check your repo to see the changes reflected
+
+__Pro tip __ Try following chapter 10 to cache your credentials to avoid logging in each time you push or pull to github - https://happygitwithr.com/credential-caching.html#credential-caching
 
 ## Using the Martone Lab repositories
+- how to deal with other people's files
 
-### Setting up Rstudio integration
+#### Fork over a repo
+- for cases when you want to use other people's code or collaborate
+
 1. Go to https://github.com/martonelab
 2. Go to the Read-Me repository
 3. Click Fork (makes a copy to your GitHub Account)
@@ -45,23 +100,14 @@ Jenny Bryan's https://happygitwithr.com/
 - your changes will not be integrated until you say so
 - it's like making alternative universes and timelines (less of a concern for less complicated projects)
 4. Clone your repository
-_Pro tip_ 
-- make a directory (ie. tmp) where it is easy to add all your github repos to 
-- you should be removing the repo when you are done with it as good practice
-- pull the repo down to your computer when you need it
+__This part is the same as cloning your own__
 
-### Pull Commit Push
-1. `pull` - make it a habit to pull everytime before you start working on anything
-2. `commit`- the staging area, also make sure you have an informative commit message
-3. `push` - you
+#### Adding your changes
+1. go to your repo that you forked to your account
+2. click new pull request
+3. click create pull request
+4. write something informative in the title and comments
+5. click create pull request
+6. now you need to wait for the owner of the repo to merge (approve of) your changes
 
-## Terminology cheat sheet
-- `repo` / `repository` - a "folder"
-- `Fork` - copy over a repo
-- `pull request` / `pr` - when you submit some changes to be reviewed and integrate into the files
-- `push`
-- `pull`
-- `commit`
-- `branches` - an alternate timeline for the original dile 
-- `issue` - you can use this as a chat board/ forum for discussing problems associated with this repo
-- `merge conflict`
+Congrats! Now you can push new lesson repos into the Lab github and pull lessons people have made available!
